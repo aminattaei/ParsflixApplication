@@ -1,0 +1,41 @@
+{% load static %}
+<!doctype html>
+<html dir="rtl" lang="en-US">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+      <title>
+        
+        {% block title %}{% endblock title %}
+      </title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="{% static 'Theme/images/favicon.ico' %}" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'Theme/css/bootstrap.min.css' %}" />
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="{% static 'Theme/css/typography.css' %}">
+      <!-- Style -->
+      <link rel="stylesheet" href="{% static 'Theme/css/style.css' %}" />
+      <!-- Responsive -->
+      <link rel="stylesheet" href="{% static 'Theme/css/responsive.css' %}" />
+   </head>
+   <body>
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Start header include -->
+      {% include "partials/__header.html" %}
+      <!-- End header include -->
+
+      <!-- Content goes here -->
+      {% block content %}{% endblock content %}
+
+    <!-- Start footer include -->
+    {% include "partials/__footer.html" %}
+    <!-- End footer include -->
