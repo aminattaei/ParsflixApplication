@@ -33,9 +33,32 @@ Parsflix Application is a web platform built using Django framework that allows 
 - Access the admin panel at `http://127.0.0.1:8000/admin/` for administrative tasks.
 - The application is currently in development phase with basic Django setup.
 
+## Deployment
+
+For production deployment:
+
+1. Install production dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Collect static files:
+   ```
+   python manage.py collectstatic --noinput
+   ```
+
+3. Run with Gunicorn:
+   ```
+   gunicorn core.wsgi:application --bind 0.0.0.0:8000
+   ```
+
+4. For better production setup, use a reverse proxy like Nginx.
+
 ## Technologies Used
 
 - Django 5.2.8
+- Gunicorn (for production server)
+- PostgreSQL (database)
 - Python
 
 ## Contributing
