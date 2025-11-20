@@ -1,0 +1,709 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} نمایش دسته بندی {% endblock title %} 
+
+{% block content %}
+
+
+   <!-- Slider Start -->
+   <section class="iq-main-slider p-0">
+      <div id="tvshows-slider" class="iq-rtl-direction">
+         <div>
+            <a href="show-details.html">
+               <div class="shows-img">
+                  <img src="Theme/images/shows-banner/show-1.jpg" class="w-100" alt="">
+                  <div class="shows-content">
+                     <h4 class="text-white mb-1">The Hero Camp</h4>
+                     <div class="movie-time d-flex align-items-center">
+                        <div class="badge badge-secondary p-1 mr-2">18+</div>
+                        <span class="text-white">3 فصل</span>
+                     </div>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <div>
+            <a href="show-details.html">
+               <div class="shows-img">
+                  <img src="Theme/images/shows-banner/show-2.jpg" class="w-100" alt="">
+                  <div class="shows-content">
+                     <h4 class="text-white mb-1">The Appartment</h4>
+                     <div class="movie-time d-flex align-items-center">
+                        <div class="badge badge-secondary p-1 mr-2">17+</div>
+                        <span class="text-white">3 فصل</span>
+                     </div>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <div>
+            <a href="show-details.html">
+               <div class="shows-img">
+                  <img src="Theme/images/shows-banner/show-3.jpg" class="w-100" alt="">
+                  <div class="shows-content">
+                     <h4 class="text-white mb-1">The Marshal King</h4>
+                     <div class="movie-time d-flex align-items-center">
+                        <div class="badge badge-secondary p-1 mr-2">11+</div>
+                        <span class="text-white">3 فصل</span>
+                     </div>
+                  </div>
+               </div>
+            </a>
+         </div>         
+      </div>
+      <div class="dropdown genres-box">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+           ژانرها
+        </button>
+        <div class="dropdown-menu three-column" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item" href="#">هندی</a>
+           <a class="dropdown-item" href="#">تامیل</a>
+           <a class="dropdown-item" href="#">پنجابی</a>
+           <a class="dropdown-item" href="#">انگلیسی</a>
+           <a class="dropdown-item" href="#">کمدی</a>
+           <a class="dropdown-item" href="#">اکشن</a>
+           <a class="dropdown-item" href="#">داستان عاشقانه</a>
+           <a class="dropdown-item" href="#">درام ها</a>
+           <a class="dropdown-item" href="#">بالیوود</a>
+           <a class="dropdown-item" href="#">هالیوود</a>
+           <a class="dropdown-item" href="#">کودکان و خانواده</a>
+           <a class="dropdown-item" href="#">برنده جایزه</a>
+        </div>
+     </div>
+   </section>
+   <!-- Slider End -->
+   <!-- MainContent -->
+   <div class="main-content">
+      <section id="iq-favorites">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 overflow-hidden">
+                  <div class="iq-main-header d-flex align-items-center justify-content-between">
+                     <h4 class="main-title">نمایش های محبوب</h4>
+                  </div>
+                  <div class="favorites-contens">
+                     <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
+                        <li class="slide-item">
+                           
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/01.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Day of Darkness</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">15+</div>
+                                       <span class="text-white">2 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                         تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                       <li class="share">
+                                          <span><i class="ri-share-fill"></i></span>
+                                          <div class="share-box">
+                                             <div class="d-flex align-items-center">
+                                                <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li>
+                                           <span><i class="ri-heart-fill"></i></span>
+                                           <span class="count-box">19+</span>
+                                        </li>
+                                      <li><span><i class="ri-add-line"></i></span></li>
+                     
+                                    </ul>
+                                 </div>
+                              </div>
+                           
+                        </li>
+                        <li class="slide-item">
+                           
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/02.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">My True Friends</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">7+</div>
+                                       <span class="text-white">2 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                         تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                           
+                        </li>
+                        <li class="slide-item">
+                           
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/03.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Arrival 1999</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">11+</div>
+                                       <span class="text-white">2 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                           
+                        </li>
+                        <li class="slide-item">
+                           
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/04.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Night Mare</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">18+</div>
+                                       <span class="text-white">2 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                           
+                        </li>
+                        <li class="slide-item">
+                           
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/05.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">The Marshal King</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">17+</div>
+                                       <span class="text-white">2 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                           
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="iq-upcoming-movie">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 overflow-hidden">
+                  <div class="iq-main-header d-flex align-items-center justify-content-between">
+                     <h4 class="main-title">بهترین نمایش های بین المللی</h4>
+                  </div>
+                  <div class="upcoming-contens">
+                     <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/06.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Last Track</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">19+</div>
+                                       <span class="text-white">3 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/07.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Dino Land</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">9+</div>
+                                       <span class="text-white">2 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/08.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Mission Moon</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">18+</div>
+                                       <span class="text-white">3 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>                        
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/03.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Arrival 1999</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">11+</div>
+                                       <span class="text-white">3 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                         تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/05.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">The Marshal King</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">17+</div>
+                                       <span class="text-white">1 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          تماشا کن</a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="iq-suggestede">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 overflow-hidden">
+                  <div class="iq-main-header d-flex align-items-center justify-content-between">
+                     <h4 class="main-title">نمایش هایی که توصیه می کنیم</h4>
+                  </div>
+                  <div class="suggestede-contens">
+                     <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/01.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Day of Darkness</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">15+</div>
+                                       <span class="text-white">2 فصل</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <a href="movie-details.html" role="button" class="btn btn-hover">
+                                          <i class="fa fa-play mr-1" aria-hidden="true"></i> تماشا کن
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/08.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Mission Moon</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                        <div class="badge badge-secondary p-1 mr-2">15+</div>
+                                        <span class="text-white">2 فصل</span>
+                                     </div>
+                                     <div class="hover-buttons">
+                                        <a href="movie-details.html" role="button" class="btn btn-hover">
+                                           <i class="fa fa-play mr-1" aria-hidden="true"></i> تماشا کن
+                                        </a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>                        
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/05.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">The Marshal King</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                        <div class="badge badge-secondary p-1 mr-2">15+</div>
+                                        <span class="text-white">2 فصل</span>
+                                     </div>
+                                     <div class="hover-buttons">
+                                        <a href="movie-details.html" role="button" class="btn btn-hover">
+                                           <i class="fa fa-play mr-1" aria-hidden="true"></i> تماشا کن
+                                        </a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>
+                        <li class="slide-item">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img src="Theme/images/tvthrillers/04.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6 class="iq-title"><a href="movie-details.html">Knight Mare</a></h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                        <div class="badge badge-secondary p-1 mr-2">15+</div>
+                                        <span class="text-white">2 فصل</span>
+                                     </div>
+                                     <div class="hover-buttons">
+                                        <a href="movie-details.html" role="button" class="btn btn-hover">
+                                           <i class="fa fa-play mr-1" aria-hidden="true"></i> تماشا کن
+                                        </a>
+                                    </div>
+                                 </div>
+                                 <div class="block-social-info">
+                                    <ul class="list-inline p-0 m-0 music-play-lists">
+                                           <li class="share">
+                                              <span><i class="ri-share-fill"></i></span>
+                                              <div class="share-box">
+                                                 <div class="d-flex align-items-center">
+                                                    <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                                 </div>
+                                              </div>
+                                           </li>
+                                           <li>
+                                               <span><i class="ri-heart-fill"></i></span>
+                                               <span class="count-box">19+</span>
+                                            </li>
+                                          <li><span><i class="ri-add-line"></i></span></li>
+                         
+                                        </ul>
+                                 </div>
+                              </div>
+                        </li>
+                        <li class="slide-item">                              
+                           <div class="block-images position-relative">
+                              <div class="img-box">
+                                 <img src="Theme/images/tvthrillers/02.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="block-description">
+                                 <h6 class="iq-title"><a href="show-details.html">Friends</a></h6>
+                                 <div class="movie-time d-flex align-items-center my-2">
+                                    <div class="badge badge-secondary p-1 mr-2">15+</div>
+                                    <span class="text-white">2 فصل</span>
+                                 </div>
+                                 <div class="hover-buttons">
+                                    <a href="movie-details.html" role="button" class="btn btn-hover">
+                                       <i class="fa fa-play mr-1" aria-hidden="true"></i> تماشا کن
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="block-social-info">
+                                 <ul class="list-inline p-0 m-0 music-play-lists">
+                                    <li class="share">
+                                        <span><i class="ri-share-fill"></i></span>
+                                        <div class="share-box">
+                                           <div class="d-flex align-items-center">
+                                              <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                              <a href="https://twitter.com/intent/tweet?text=Currentlyreading" target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i class="ri-twitter-fill"></i></a>
+                                              <a href="#" data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/" class="share-ico iq-copy-link" tabindex="0"><i class="ri-links-fill"></i></a>
+                                           </div>
+                                        </div>
+                                     </li>
+                                    <li><span><i class="ri-heart-fill"></i></span>
+                                  <span class="count-box">19+</span></li>
+                                    <li><span><i class="ri-add-line"></i></span></li>
+                                 </ul>
+                              </div>
+                           </div>                              
+                     </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+   
+
+{% endblock content %}
