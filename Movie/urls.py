@@ -1,26 +1,18 @@
-"""
-URL configuration for core project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
-
 from django.urls import path
 from . import views
 
-urlpatterns = [
-    path('',views.HomeTemplateView.as_view(),name="Home_page"),
-    path('movies/',views.movie_list,name="Movie_list"),
-    path('movie/<int:pk>/',views.MovieDetailView.as_view(),name='Movie_detail')
-]
+app_name = "movies"
 
+urlpatterns = [
+    # صفحه اصلی
+    path('', views.HomeTemplateView.as_view(), name='home'),
+
+    # لیست فیلم‌ها
+    path('movies/', views.movie_list, name='movie_list'),
+
+    # جزئیات هر فیلم
+    path('movies/<int:pk>/', views.MovieDetailView.as_view(), name='movie_detail'),
+
+    # تست اتصال TMDB API
+    path('test-tmdb/', views.test_tmdb_api, name='test_tmdb_api'),
+]

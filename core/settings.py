@@ -134,3 +134,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  
+
+TMDB_API_KEY = os.getenv("42941c2a27179fe453d890aa899494d5")
