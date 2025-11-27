@@ -1,3 +1,4 @@
+{% load static %}
 
  <div class="iq-breadcrumb-one  iq-bg-over iq-over-dark-50" style="background-image: url(Theme/images/about-us/01.jpg);">  
     <div class="container-fluid"> 
@@ -24,7 +25,7 @@
                 <article>
                     <div class="iq-blog-box">
                        <div class="iq-blog-image">
-                          <img width="1920" height="1080" src="Theme/images/blog/blog1.jpeg" >				
+                          <img width="1920" height="1080" src="{% static 'Theme/images/blog/blog1.jpeg' %}" >				
                        </div>
                        <div class="iq-blog-detail">
                             <div class="iq-blog-meta">
@@ -261,13 +262,13 @@
       <!-- Favicon -->
       <link rel="shortcut icon" href="Theme/images/favicon.ico" />
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="Theme/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="{% static 'Theme/css/bootstrap.min.css' %}" />
       <!-- Typography CSS -->
-      <link rel="stylesheet" href="Theme/css/typography.css">
+      <link rel="stylesheet" href="{% static 'Theme/css/typography.css' %}">
       <!-- Style -->
-      <link rel="stylesheet" href="Theme/css/style.css" />
+      <link rel="stylesheet" href="{% static 'Theme/css/style.css' %}" />
       <!-- Responsive -->
-      <link rel="stylesheet" href="Theme/css/responsive.css" />
+      <link rel="stylesheet" href="{% static 'Theme/css/responsive.css' %}" />
    </head>
    <body>
       <!-- loader Start -->
@@ -292,7 +293,7 @@
                               <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
                            </div>
                         </a>
-                        <a class="navbar-brand" href="index.html"> <img class="img-fluid logo" src="Theme/images/logo.png"
+                        <a class="navbar-brand" href="{% static 'index.html' %}"> <img class="img-fluid logo" src="{% static 'Theme/images/logo.png' %}"
                            alt="streamit" /> </a>
                         
                         <div class="mobile-more-menu">
@@ -332,7 +333,7 @@
                                              <div class="iq-card-body">
                                                 <a href="#" class="iq-sub-card">
                                                    <div class="media align-items-center">
-                                                      <img src="Theme/images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                      <img src="{% static 'Theme/images/notify/thumb-1.jpg' %}" class="img-fluid mr-3"
                                                          alt="streamit" />
                                                       <div class="media-body">
                                                          <h6 class="mb-0 ">Boop Bitty</h6>
@@ -342,7 +343,7 @@
                                                 </a>
                                                 <a href="#" class="iq-sub-card">
                                                    <div class="media align-items-center">
-                                                      <img src="Theme/images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                      <img src="{% static 'Theme/images/notify/thumb-2.jpg' %}" class="img-fluid mr-3"
                                                          alt="streamit" />
                                                       <div class="media-body">
                                                          <h6 class="mb-0 ">The Last Breath</h6>
@@ -352,7 +353,7 @@
                                                 </a>
                                                 <a href="#" class="iq-sub-card">
                                                    <div class="media align-items-center">
-                                                      <img src="Theme/images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                      <img src="{% static 'Theme/images/notify/thumb-3.jpg' %}" class="img-fluid mr-3"
                                                          alt="streamit" />
                                                       <div class="media-body">
                                                          <h6 class="mb-0 ">The Hero Camp</h6>
@@ -366,13 +367,13 @@
                                     </li>
                                     <li>
                                        <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
-                                       <img src="Theme/images/user/user.jpg" class="img-fluid avatar-40 rounded-circle"
+                                       <img src="{% static 'Theme/images/user/user.jpg' %}" class="img-fluid avatar-40 rounded-circle"
                                           alt="user">
                                        </a>
                                        <div class="iq-sub-dropdown iq-user-dropdown">
                                           <div class="iq-card shadow-none m-0">
                                              <div class="iq-card-body p-0 pl-3 pr-3">
-                                                <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                                <a href="{% static 'manage-profile.html' %}" class="iq-sub-card setting-dropdown">
                                                    <div class="media align-items-center">
                                                       <div class="right-icon">
                                                          <i class="ri-file-user-line text-primary"></i>
@@ -382,7 +383,7 @@
                                                       </div>
                                                    </div>
                                                 </a>
-                                                <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                                <a href="{% static 'setting.html' %}" class="iq-sub-card setting-dropdown">
                                                    <div class="media align-items-center">
                                                       <div class="right-icon">
                                                          <i class="ri-settings-4-line text-primary"></i>
@@ -392,7 +393,7 @@
                                                       </div>
                                                    </div>
                                                 </a>
-                                                <a href="pricing-plan-1.html" class="iq-sub-card setting-dropdown">
+                                                <a href="{% static 'pricing-plan-1.html' %}" class="iq-sub-card setting-dropdown">
                                                    <div class="media align-items-center">
                                                       <div class="right-icon">
                                                          <i class="ri-settings-4-line text-primary"></i>
@@ -402,7 +403,7 @@
                                                       </div>
                                                    </div>
                                                 </a>
-                                                <a href="login.html" class="iq-sub-card setting-dropdown">
+                                                <a href="{% static 'login.html' %}" class="iq-sub-card setting-dropdown">
                                                    <div class="media align-items-center">
                                                       <div class="right-icon">
                                                          <i class="ri-logout-circle-line text-primary"></i>
@@ -424,32 +425,32 @@
                            <div class="menu-main-menu-container">
                               <ul id="top-menu" class="navbar-nav ml-auto">
                                  <li class="menu-item">
-                                    <a href="index.html">خانه</a>
+                                    <a href="{% static 'index.html' %}">خانه</a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="movie-category.html">فیلم ها</a>
+                                    <a href="{% static 'movie-category.html' %}">فیلم ها</a>
                                  </li> 
                                  <li class="menu-item">
-                                    <a href="show-category.html">برنامه های تلویزیونی</a>
+                                    <a href="{% static 'show-category.html' %}">برنامه های تلویزیونی</a>
                                  </li>                                                              
                                  <li class="menu-item">
                                     <a href="#">وبلاگ</a>
                                     <ul class="sub-menu">
-                                       <li class="menu-item"><a href="blog.html">وبلاگ</a></li>
-                                       <li class="menu-item"><a href="blog-details.html">جزئیات وبلاگ</a></li>
+                                       <li class="menu-item"><a href="{% static 'blog.html' %}">وبلاگ</a></li>
+                                       <li class="menu-item"><a href="{% static 'blog-details.html' %}">جزئیات وبلاگ</a></li>
                                     </ul>
                                  </li>
                                  <li class="menu-item">
                                     <a href="#">صفحات</a>
                                     <ul class="sub-menu">
-                                       <li class="menu-item"><a href="about-us.html">درباره ما</a></li>
-                                       <li class="menu-item "><a href="contact.html">تماس با ما</a></li>
-                                       <li class="menu-item"><a href="faq.html">سوالات متداول</a></li>
-                                       <li class="menu-item"><a href="privacy-policy.html">قوانین</a></li>
+                                       <li class="menu-item"><a href="{% static 'about-us.html' %}">درباره ما</a></li>
+                                       <li class="menu-item "><a href="{% static 'contact.html' %}">تماس با ما</a></li>
+                                       <li class="menu-item"><a href="{% static 'faq.html' %}">سوالات متداول</a></li>
+                                       <li class="menu-item"><a href="{% static 'privacy-policy.html' %}">قوانین</a></li>
                                        <li class="menu-item"><a href="#">قیمت گذاری</a>
                                        <ul class="sub-menu">
-                                          <li class="menu-item"><a href="pricing-plan-1.html">طرح قیمت گذاری 1</a></li>
-                                          <li class="menu-item"><a href="pricing-plan-2.html">طرح قیمت گذاری 2</a></li>
+                                          <li class="menu-item"><a href="{% static 'pricing-plan-1.html' %}">طرح قیمت گذاری 1</a></li>
+                                          <li class="menu-item"><a href="{% static 'pricing-plan-2.html' %}">طرح قیمت گذاری 2</a></li>
                                        </ul>
                                     </li>
                                     </ul>
@@ -488,7 +489,7 @@
                                        <div class="iq-card-body">
                                           <a href="#" class="iq-sub-card">
                                              <div class="media align-items-center">
-                                                <img src="Theme/images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                <img src="{% static 'Theme/images/notify/thumb-1.jpg' %}" class="img-fluid mr-3"
                                                    alt="streamit" />
                                                 <div class="media-body">
                                                    <h6 class="mb-0 ">Boot Bitty</h6>
@@ -498,7 +499,7 @@
                                           </a>
                                           <a href="#" class="iq-sub-card">
                                              <div class="media align-items-center">
-                                                <img src="Theme/images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                <img src="{% static 'Theme/images/notify/thumb-2.jpg' %}" class="img-fluid mr-3"
                                                    alt="streamit" />
                                                 <div class="media-body">
                                                    <h6 class="mb-0 ">The Last Breath</h6>
@@ -508,7 +509,7 @@
                                           </a>
                                           <a href="#" class="iq-sub-card">
                                              <div class="media align-items-center">
-                                                <img src="Theme/images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                <img src="{% static 'Theme/images/notify/thumb-3.jpg' %}" class="img-fluid mr-3"
                                                    alt="streamit" />
                                                 <div class="media-body">
                                                    <h6 class="mb-0 ">The Hero Camp</h6>
@@ -523,12 +524,12 @@
                               <li class="nav-item nav-icon">
                                  <a href="#" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center"
                                     data-toggle="search-toggle">
-                                 <img src="Theme/images/user/user.jpg" class="img-fluid avatar-40 rounded-circle" alt="user">
+                                 <img src="{% static 'Theme/images/user/user.jpg' %}" class="img-fluid avatar-40 rounded-circle" alt="user">
                                  </a>
                                  <div class="iq-sub-dropdown iq-user-dropdown">
                                     <div class="iq-card shadow-none m-0">
                                        <div class="iq-card-body p-0 pl-3 pr-3">
-                                          <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                          <a href="{% static 'manage-profile.html' %}" class="iq-sub-card setting-dropdown">
                                              <div class="media align-items-center">
                                                 <div class="right-icon">
                                                    <i class="ri-file-user-line text-primary"></i>
@@ -538,7 +539,7 @@
                                                 </div>
                                              </div>
                                           </a>
-                                          <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                          <a href="{% static 'setting.html' %}" class="iq-sub-card setting-dropdown">
                                              <div class="media align-items-center">
                                                 <div class="right-icon">
                                                    <i class="ri-settings-4-line text-primary"></i>
@@ -548,7 +549,7 @@
                                                 </div>
                                              </div>
                                           </a>
-                                          <a href="pricing-plan-1.html" class="iq-sub-card setting-dropdown">
+                                          <a href="{% static 'pricing-plan-1.html' %}" class="iq-sub-card setting-dropdown">
                                              <div class="media align-items-center">
                                                 <div class="right-icon">
                                                    <i class="ri-settings-4-line text-primary"></i>
@@ -558,7 +559,7 @@
                                                 </div>
                                              </div>
                                           </a>
-                                          <a href="login.html" class="iq-sub-card setting-dropdown">
+                                          <a href="{% static 'login.html' %}" class="iq-sub-card setting-dropdown">
                                              <div class="media align-items-center">
                                                 <div class="right-icon">
                                                    <i class="ri-logout-circle-line text-primary"></i>
@@ -607,7 +608,7 @@
                 <article>
                     <div class="iq-blog-box">
                        <div class="iq-blog-image">
-                          <img width="1920" height="1080" src="Theme/images/blog/blog1.jpeg" >				
+                          <img width="1920" height="1080" src="{% static 'Theme/images/blog/blog1.jpeg' %}" >				
                        </div>
                        <div class="iq-blog-detail">
                             <div class="iq-blog-meta">
@@ -847,13 +848,13 @@
                                     <a href="#">شرایط استفاده</a>
                                 </li>
                                 <li id="menu-item-7316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7316">
-                                    <a href="../html/privacy-policy.html">سیاست حفظ حریم خصوصی</a>
+                                    <a href="{% static '../html/privacy-policy.html' %}">سیاست حفظ حریم خصوصی</a>
                                 </li>
                                 <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
-                                   <a href="../html/faq.html">سوالات متداول</a>
+                                   <a href="{% static '../html/faq.html' %}">سوالات متداول</a>
                                </li>
                                 <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
-                                    <a href="../html/watch-video.html">لیست تماشا</a>
+                                    <a href="{% static '../html/watch-video.html' %}">لیست تماشا</a>
                                 </li>
                             </ul>
                         </div>
@@ -882,9 +883,9 @@
                             <h6 class="footer-link-title">اپلیکیشن ما</h6>
                             <div class="d-flex align-items-center">
                                 <a class="app-image" href="#">
-                                    <img src="Theme/images/footer/01.jpg" alt="play-store">
+                                    <img src="{% static 'Theme/images/footer/01.jpg' %}" alt="play-store">
                                 </a><br>
-                                <a class="ml-3 app-image" href="#"><img src="Theme/images/footer/02.jpg" alt="app-store"></a>
+                                <a class="ml-3 app-image" href="#"><img src="{% static 'Theme/images/footer/02.jpg' %}" alt="app-store"></a>
                             </div>
                         </div>
                     </div>
@@ -902,21 +903,21 @@
   </div>
   <!-- back-to-top End -->
   <!-- jQuery, Popper JS -->
-  <script src="Theme/js/jquery-3.4.1.min.js"></script>
-  <script src="Theme/js/popper.min.js"></script>
+  <script src="{% static 'Theme/js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'Theme/js/popper.min.js' %}"></script>
   <!-- Bootstrap JS -->
-  <script src="Theme/js/bootstrap.min.js"></script>
+  <script src="{% static 'Theme/js/bootstrap.min.js' %}"></script>
   <!-- Slick JS -->
-  <script src="Theme/js/slick.min.js"></script>
+  <script src="{% static 'Theme/js/slick.min.js' %}"></script>
   <!-- owl carousel Js -->
-  <script src="Theme/js/owl.carousel.min.js"></script>
+  <script src="{% static 'Theme/js/owl.carousel.min.js' %}"></script>
   <!-- select2 Js -->
-  <script src="Theme/js/select2.min.js"></script>
+  <script src="{% static 'Theme/js/select2.min.js' %}"></script>
   <!-- Magnific Popup-->
-  <script src="Theme/js/jquery.magnific-popup.min.js"></script>
+  <script src="{% static 'Theme/js/jquery.magnific-popup.min.js' %}"></script>
   <!-- Slick Animation-->
-  <script src="Theme/js/slick-animation.min.js"></script>
+  <script src="{% static 'Theme/js/slick-animation.min.js' %}"></script>
   <!-- Custom JS-->
-  <script src="Theme/js/custom.js"></script>
+  <script src="{% static 'Theme/js/custom.js' %}"></script>
 </body>
 </html>

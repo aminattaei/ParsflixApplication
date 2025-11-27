@@ -1,7 +1,11 @@
 import os
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+<<<<<<< HEAD
 from .models import Movie
+=======
+from django.views import View
+>>>>>>> 94ce2c1 (Created movie-category.html and set get movies from database)
 import tmdbsimple as tmdb
 
 # ===========================
@@ -15,6 +19,7 @@ tmdb.API_KEY = TMDB_API_KEY
 tmdb.REQUESTS_TIMEOUT = (2, 5)
 
 
+<<<<<<< HEAD
 # ===========================
 # HOME PAGE
 # ===========================
@@ -84,6 +89,33 @@ def movie_list(request):
 # ===========================
 # MOVIE DETAIL
 # ===========================
+=======
+class HomeListView(generic.ListView):
+    model = Movie
+    context_object_name = 'movies'
+    template_name = "index.html"
+
+    def get_context_data(self, **kwargs) -> dict[str]:
+        context = super().get_context_data(**kwargs)
+        context["popular_movies"] = Movie.objects.all()[:20]
+        context["top_rated_movies"] = Movie.objects.all()[20:40]
+        return context
+    
+
+class MovieListView(generic.ListView):
+    model = Movie
+    context_object_name = 'movies'
+    template_name = "movie-category.html"
+
+    def get_context_data(self, **kwargs) -> dict[str]:
+        context = super().get_context_data(**kwargs)
+        context["popular_movies"] = Movie.objects.all()[:20]
+        context["top_rated_movies"] = Movie.objects.all()[20:40]
+        return context
+
+
+
+>>>>>>> 94ce2c1 (Created movie-category.html and set get movies from database)
 class MovieDetailView(generic.DetailView):
     model = Movie
     context_object_name = 'movie'

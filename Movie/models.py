@@ -72,6 +72,8 @@ class Movie(models.Model):
     poster_path = models.CharField(max_length=500, null=True, blank=True)
     backdrop_path = models.CharField(max_length=500, null=True, blank=True)
 
+    cover = models.ImageField(upload_to='Movies/Covers', height_field=None, width_field=None, max_length=None)
+    
     vote_average = models.FloatField(default=0)
     vote_count = models.IntegerField(default=0)
     popularity = models.FloatField(default=0)
