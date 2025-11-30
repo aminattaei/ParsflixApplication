@@ -140,5 +140,3 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()  
-
-TMDB_API_KEY = os.getenv("42941c2a27179fe453d890aa899494d5")

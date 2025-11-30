@@ -1,40 +1,25 @@
 import os
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-<<<<<<< HEAD
 from .models import Movie
-=======
 from django.views import View
->>>>>>> 94ce2c1 (Created movie-category.html and set get movies from database)
 import tmdbsimple as tmdb
-
-# ===========================
-# TMDB CONFIG
-# ===========================
-TMDB_API_KEY = os.getenv("TMDB_API_KEY")
-if not TMDB_API_KEY:
-    raise Exception("TMDB_API_KEY is not set in environment variables!")
-
-tmdb.API_KEY = TMDB_API_KEY
-tmdb.REQUESTS_TIMEOUT = (2, 5)
+import json
+import asyncio
+from nats.aio.client import Client as NATS
+from django.http import JsonResponse
 
 
-<<<<<<< HEAD
-# ===========================
-# HOME PAGE
-# ===========================
-class HomeTemplateView(generic.TemplateView):
-    template_name = "index.html"
+# Initialize TMDB API
+tmdb.API_KEY = os.getenv('TMDB_API_KEY')
+
 
 
 # ===========================
 # UTILS: FETCH & CACHE MOVIES
 # ===========================
 def fetch_and_cache_movies(category="popular", count=20):
-    """
-    دریافت لیست فیلم‌ها از TMDB و ذخیره در دیتابیس
-    category: popular | top_rated
-    """
+    
     movies_api = tmdb.Movies()
     if category == "popular":
         data = movies_api.popular().get('results', [])
@@ -65,15 +50,11 @@ def fetch_and_cache_movies(category="popular", count=20):
 # MOVIE LIST
 # ===========================
 def movie_list(request):
-    """
-    صفحه نمایش لیست فیلم‌ها
-    ابتدا تلاش برای گرفتن از دیتابیس
-    اگر دیتابیس خالی بود، از TMDB API دریافت و ذخیره می‌کنیم
-    """
+    
     popular_movies = Movie.objects.filter(popularity__gt=0).order_by('-popularity')[:20]
     top_rated_movies = Movie.objects.filter(vote_average__gt=0).order_by('-vote_average')[:20]
 
-    # کش اگر دیتابیس خالی بود
+    
     if not popular_movies.exists():
         popular_movies = fetch_and_cache_movies("popular")
     if not top_rated_movies.exists():
@@ -89,7 +70,6 @@ def movie_list(request):
 # ===========================
 # MOVIE DETAIL
 # ===========================
-=======
 class HomeListView(generic.ListView):
     model = Movie
     context_object_name = 'movies'
@@ -115,22 +95,35 @@ class MovieListView(generic.ListView):
 
 
 
->>>>>>> 94ce2c1 (Created movie-category.html and set get movies from database)
 class MovieDetailView(generic.DetailView):
     model = Movie
     context_object_name = 'movie'
     template_name = "movie-details.html"
 
 
-# ===========================
-# OPTIONAL: TEST API CONNECTION
-# ===========================
-from django.http import JsonResponse
-import requests
 
-def test_tmdb_api(request):
-    try:
-        res = requests.get("https://api.themoviedb.org/3/movie/popular", params={"api_key": TMDB_API_KEY}, timeout=5)
-        return JsonResponse({"ok": True, "status_code": res.status_code})
-    except Exception as e:
-        return JsonResponse({"ok": False, "error": str(e)})
+async def publish_event(data):
+    nc = NATS()
+    await nc.connect(servers=["nats://localhost:4222"])
+
+    #JetStream
+    js = nc.jetstream()
+    
+    await js.publish(
+        "user.registered",
+        json.dumps(data).encode(),
+    )
+
+    await nc.close()
+    
+
+
+def register(request):
+    data = {
+        'user':'amin',
+        'email':'aminattaei2000@gmail.com'
+    }
+
+    asyncio.run(publish_event(data))
+
+    return JsonResponse({'status':'user registered'})

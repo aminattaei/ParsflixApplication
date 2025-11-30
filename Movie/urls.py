@@ -1,26 +1,11 @@
 from django.urls import path
 from . import views
 
-<<<<<<< HEAD
 app_name = "movies"
-=======
+
 urlpatterns = [
-    path('',views.HomeListView.as_view(),name="Home_page"),
+    path('',views.HomeListView.as_view(),name="home_page"),
     path('movies/',views.MovieListView.as_view(),name="Movie_list"),
-    path('movie/<int:pk>/',views.MovieDetailView.as_view(),name='Movie_detail')
-]
->>>>>>> 94ce2c1 (Created movie-category.html and set get movies from database)
-
-urlpatterns = [
-    # صفحه اصلی
-    path('', views.HomeTemplateView.as_view(), name='home'),
-
-    # لیست فیلم‌ها
-    path('movies/', views.movie_list, name='movie_list'),
-
-    # جزئیات هر فیلم
-    path('movies/<int:pk>/', views.MovieDetailView.as_view(), name='movie_detail'),
-
-    # تست اتصال TMDB API
-    path('test-tmdb/', views.test_tmdb_api, name='test_tmdb_api'),
+    path('movie/<int:pk>/',views.MovieDetailView.as_view(),name='Movie_detail'),
+    path('register/', views.register, name='register'),
 ]
